@@ -99,7 +99,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onClose, onAddTo
             <FaArrowLeft size={16} />
           </motion.button>
           <motion.button
-            className="absolute right-4 top-1/2 bg-white/80 text-gray-800 rounded-full p-2 sm:p-3 shadow-lg backdrop-blur-sm transition-colors duration-200 hover:bg-white"
+            className="absolute right-4 top-1/2 bg-white/80 bg-green-300 rounded-full p-2 sm:p-3 shadow-lg backdrop-blur-sm transition-colors duration-200 hover:bg-white"
             onClick={nextImage}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}

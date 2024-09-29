@@ -25,7 +25,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onClick }) => {
 
   return (
     <motion.div
-      className="bg-gray-900 text-white rounded-lg shadow-lg transition-transform transform duration-300 ease-in-out overflow-hidden cursor-pointer my-5 mx-2 hover:scale-[1.02] hover:shadow-xl will-change-transform"
+      className="bg-green-800 text-white rounded-lg shadow-lg transition-transform transform duration-300 ease-in-out overflow-hidden cursor-pointer my-5 mx-2 hover:scale-[1.02] hover:shadow-xl will-change-transform"
       onClick={onClick}
       layout
     >

@@ -19,84 +19,57 @@ interface Product {
 const mockProducts: Product[] = [
   {
     id: 1,
-    name: "Smartphone X Pro",
-    price: 999.99,
-    originalPrice: 2099.99,
-    image: "/images/product1.jpg",
-    images: ["/images/product1.jpg", "/images/product1-1.jpg"],
-    description: "Experience the future of communication with the Smartphone X Pro, featuring cutting-edge technology and a stunning design."
+    name: "NEET Biology Mastery",
+    price: 499.99,
+    originalPrice: 999.99,
+    image: "/images/course3.jpg",
+    images: ["/images/course3.jpg", "/images/course3.jpg"],
+    description: "Master NEET Biology with our comprehensive course, covering all essential topics and concepts."
   },
   {
     id: 2,
-    name: "Laptop Z Ultra",
-    price: 1299.99,
-    originalPrice: 2999.99,
-    image: "/images/product1.jpg",
-    images: ["/images/product1.jpg", "/images/product1-1.jpg"],
-    description: "The Laptop Z Ultra combines performance and portability, perfect for professionals and students alike."
+    name: "JEE Physics Advanced",
+    price: 599.99,
+    originalPrice: 1199.99,
+    image: "/images/course6.jpg",
+    images: ["/images/course6.jpg", "/images/course6.jpg"],
+    description: "Excel in JEE Physics with our advanced course, designed for in-depth understanding and problem-solving skills."
   },
   {
     id: 3,
-    name: "Wireless Headphones",
-    price: 199.99,
-    originalPrice: 499.99,
-    image: "/images/product1.jpg",
-    images: ["/images/product1.jpg", "/images/product1-1.jpg"],
-    description: "Immerse yourself in music with our Wireless Headphones, designed for comfort and superior sound quality."
+    name: "NEET Chemistry Essentials",
+    price: 399.99,
+    originalPrice: 799.99,
+    image: "/images/course1.jpg",
+    images: ["/images/course1.jpg", "/images/course1.jpg"],
+    description: "Get a strong foundation in NEET Chemistry with our essential course, focusing on key concepts and applications."
   },
   {
     id: 4,
-    name: "4K Action Camera",
-    price: 399.99,
-    originalPrice: 799.99,
-    image: "/images/product1.jpg",
-    images: ["/images/product1.jpg", "/images/product1-1.jpg"],
-    description: "Capture every adventure in stunning 4K resolution with our lightweight and durable Action Camera."
+    name: "JEE Mathematics Pro",
+    price: 699.99,
+    originalPrice: 1399.99,
+    image: "/images/course4.jpg",
+    images: ["/images/course4.jpg", "/images/course4.jpg"],
+    description: "Achieve excellence in JEE Mathematics with our pro course, offering extensive practice and expert guidance."
   },
   {
     id: 5,
-    name: "Smartwatch Series 5",
-    price: 249.99,
-    originalPrice: 1099.99,
-    image: "/images/product1.jpg",
-    images: ["/images/product1.jpg", "/images/product1-1.jpg"],
-    description: "Stay connected and track your fitness goals with the Smartwatch Series 5, designed for your active lifestyle."
+    name: "NEET Physics Fundamentals",
+    price: 449.99,
+    originalPrice: 899.99,
+    image: "/images/course2.jpg",
+    images: ["/images/course2.jpg", "/images/course2.jpg"],
+    description: "Build a solid foundation in NEET Physics with our fundamentals course, perfect for beginners and intermediates."
   },
   {
     id: 6,
-    name: "Bluetooth Speaker",
-    price: 149.99,
-    originalPrice: 599.99,
-    image: "/images/product1.jpg",
-    images: ["/images/product1.jpg", "/images/product1-1.jpg"],
-    description: "Take your music anywhere with our portable Bluetooth Speaker, offering exceptional sound quality and battery life."
-  },
-  {
-    id: 7,
-    name: "Gaming Mouse",
-    price: 89.99,
-    originalPrice: 199.99,
-    image: "/images/product1.jpg",
-    images: ["/images/product1.jpg", "/images/product1-1.jpg"],
-    description: "Enhance your gaming experience with our high-precision Gaming Mouse, designed for performance and comfort."
-  },
-  {
-    id: 8,
-    name: "Portable SSD 1TB",
-    price: 109.99,
-    originalPrice: 299.99,
-    image: "/images/product1.jpg",
-    images: ["/images/product1.jpg", "/images/product1-1.jpg"],
-    description: "Store your data securely and access it at lightning speed with our Portable SSD."
-  },
-  {
-    id: 9,
-    name: "Wireless Charger",
-    price: 49.99,
-    originalPrice: 299.99,
-    image: "/images/product1.jpg",
-    images: ["/images/product1.jpg", "/images/product1-1.jpg"],
-    description: "Charge your devices effortlessly with our sleek and efficient Wireless Charger."
+    name: "JEE Chemistry Masterclass",
+    price: 549.99,
+    originalPrice: 1099.99,
+    image: "/images/course5.jpg",
+    images: ["/images/course5.jpg", "/images/course5.jpg"],
+    description: "Master JEE Chemistry with our masterclass, featuring detailed explanations and advanced problem-solving techniques."
   }
 
 ];
@@ -124,9 +97,10 @@ const Home: React.FC = () => {
   const toggleSearch = () => {
     setShowSearch(!showSearch);
   };
+  
 
   return (
-    <div className="bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 min-h-screen flex flex-col">
+    <div className="bg-green-800 min-h-screen flex flex-col">
       <header className={`fixed w-full top-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-black bg-opacity-80' : 'bg-transparent'} backdrop-filter backdrop-blur-lg py-5`}>
         <div className="container mx-auto px-4 flex justify-between items-center">
           <motion.h1 
@@ -214,13 +188,13 @@ const Home: React.FC = () => {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-white text-6xl font-extrabold mb-4 animate-pulse">
-            Welcome to <span className="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">TechNova</span>
+            Welcome to <span className="bg-clip-text text-transparent bg-yellow-500">NeetPrep</span>
           </h2>
           <p className="text-gray-300 text-xl mb-10 max-w-2xl mx-auto">
-            Discover cutting-edge technology that will transform your digital lifestyle.
+            Discover Courses to boost your Neet Preperation.
           </p>
           <button 
-            className="bg-gradient-to-r from-pink-500 to-violet-500 text-white font-bold py-3 px-8 rounded-full hover:from-pink-600 hover:to-violet-600 transition-all duration-300 transform hover:scale-105 shadow-lg focus:outline-none focus:ring-2 focus:ring-pink-400"
+            className="bg-yellow-500 text-white font-bold py-3 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg focus:outline-none focus:ring-2 focus:ring-pink-400"
           >
             Explore Now
           </button>
@@ -233,7 +207,7 @@ const Home: React.FC = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-violet-500 opacity-25 rounded-lg shadow-2xl transform -rotate-2 scale-105 z-0"></div>
+            <div className="absolute inset-0 bg-yellow-500 opacity-25 rounded-lg shadow-2xl transform -rotate-2 scale-105 z-0"></div>
             <div className="relative z-10 bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-lg shadow-xl p-8">
               <ProductShowcase products={mockProducts} onAddToCart={addToCart} cartIconRef={cartIconRef} />
             </div>
@@ -250,7 +224,7 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               { icon: Star, title: "Top Quality", description: "We offer the best Courses." },
-              { icon: ShoppingCart, title: "Course Buy", description: "User-friendly interface for a smooth Education Content." },
+              { icon: ShoppingCart, title: "Buy Courses", description: "User-friendly interface for a smooth Neet Content." },
               { icon: ArrowDown, title: "Best Prices", description: "Competitive prices and regular discounts on our Courses." }
             ].map((feature, index) => (
               <motion.div 
