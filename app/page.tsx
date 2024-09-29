@@ -138,7 +138,7 @@ const Home: React.FC = () => {
             NeetPrep
           </motion.h1>
           <nav className="hidden md:flex space-x-8">
-            {['Home', 'Products', 'About', 'Contact'].map((item, index) => (
+            {['Home', 'Courses', 'About', 'Contact'].map((item, index) => (
               <motion.a
                 key={item}
                 href="#"
@@ -246,12 +246,12 @@ const Home: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <h3 className="text-white text-3xl font-bold mb-6">Why Choose TechNova?</h3>
+          <h3 className="text-white text-3xl font-bold mb-6">Why Choose NeetPrep?</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: Star, title: "Top Quality", description: "We offer only the best products from trusted brands." },
-              { icon: ShoppingCart, title: "Easy Shopping", description: "User-friendly interface for a smooth shopping experience." },
-              { icon: ArrowDown, title: "Best Prices", description: "Competitive prices and regular discounts on our products." }
+              { icon: Star, title: "Top Quality", description: "We offer the best Courses." },
+              { icon: ShoppingCart, title: "Course Buy", description: "User-friendly interface for a smooth Education Content." },
+              { icon: ArrowDown, title: "Best Prices", description: "Competitive prices and regular discounts on our Courses." }
             ].map((feature, index) => (
               <motion.div 
                 key={index}
@@ -269,17 +269,20 @@ const Home: React.FC = () => {
       </main>
 
       <footer className="bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg py-8 mt-20">
-        <div className="container mx-auto px-4 text-center">
-          <p className="text-gray-300 mb-4">© 2024 TechNova. All rights reserved.</p>
-          <p className="text-gray-400 mb-4">Stay connected with us</p>
-        
-          <div className="flex flex-wrap justify-center space-x-6">
-            <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
-            <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Contact Us</a>
-          </div>
-        </div>
-      </footer>
+  <div className="container mx-auto px-4 text-center">
+    <p className="text-gray-300 mb-4">© 2024 NeetPrep. All rights reserved.</p>
+    <p className="text-gray-400 mb-4">Explore our courses and resources</p>
+    
+    <div className="flex flex-wrap justify-center space-x-6">
+      <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Courses</a>
+      <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Resources</a>
+      <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">About Us</a>
+      <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Contact Us</a>
+      <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+      <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+    </div>
+  </div>
+</footer>
 
     </div>
   );
