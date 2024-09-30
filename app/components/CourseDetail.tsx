@@ -1,8 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Star } from 'lucide-react';
-import { Product } from '../page'; // Ensure the path to the Product interface is correct
-
+import { Product } from '../page'; 
 interface ProductDetailProps {
   product: Product;
   onClose: () => void;
@@ -50,22 +49,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ product, onClose, onAddTo
               <span className="text-gray-500 line-through">
                 ₹{product.originalPrice.toFixed(2)}
               </span>
-              {/* <span className="ml-2 bg-green-500 text-white px-2 py-1 text-sm rounded-md">
-                {product.discount}% off
-              </span> */}
             </div>
-            {/* <div className="flex items-center mb-4">
-              <div className="flex items-center mr-4">
-                {[...Array(5)].map((_, i) => (
-                  <Star
-                    key={i}
-                    className={i < product.rating ? "text-yellow-400" : "text-gray-300"}
-                    size={16}
-                  />
-                ))}
-              </div>
-              <span className="text-sm text-gray-600">({product.reviews} reviews)</span>
-            </div> */}
             <button
               onClick={onAddToCart}
               className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-300"
