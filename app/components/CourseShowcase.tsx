@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import ProductCard from './CourseCard';
 import ProductDetail from './CourseDetail';
 import Image from 'next/image';
+import { Product } from '../page';
 
 interface ProductShowcaseProps {
   products: Product[];
@@ -47,7 +48,7 @@ const ProductShowcase: React.FC<ProductShowcaseProps> = ({ products, onAddToCart
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
       >
-        {products.map((product) => (
+        {products.map((product: Product) => (
           <motion.div key={product.id} initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 20 }} transition={{ duration: 0.3 }}>
             <ProductCard product={product} onClick={() => openProductDetail(product)} />
           </motion.div>
